@@ -1,156 +1,282 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>SheSureCodes Project Portfolio</title>
-        <style type="text/css">
-            header, section, footer, aside, nav, article, figure, figcaption {
-                display: block;}
-                body {
-                    color: #666666;
-                    background-color: #f9f8f6;
-                    background-image: url("assets/images/joshua-bartell-6vvIBTvL90A-unsplash.jpg");
-                    background-position: center;
-                    font-family: Georgia, Times, serif;
-                    line-height: 1.4em;
-                    margin: 0px;}
-                .wrapper {
-                    width: 940px;
-                    margin: 20px auto 20px auto;
-                    border: 2px solid #000000;
-                    background-color: #ffffff;}
-                header {
-                    height: 160px;
-                    background-image: url("assets/images/mockaroon-YqUeLG7fMr4-unsplash.jpg");}
-                h1 {
-                    text-indent: -9999px;
-                    width: 940px;
-                    height: 130px;
-                    margin: 0px;}
-                nav, footer {
-                clear: both;
-                color: #ffffff;
-                background-color: #aeaca8;
-                height: 30px;
-                }
-                nav ul {
-                    margin: 0px;
-                    padding: 5px 0px 5px 30px;}
-                nav li {
-                    display: inline;
-                    margin-right: 40px;}
-                nav li a {
-                    color: #ffffff;}
-                nav li a:hover, nav li a.current {
-                    color: #000000;}
-                    section.courses {
-                        float: left;
-                        width: 659px;
-                        border-right: lpx solid #eeeeee;
-                    }
-                article {
-                    clear: both;
-                    overflow: auto;
-                    width: 100%;}
-                hgroup {
-                    margin-top: 40px;}
-                figure {
-                    float: left;
-                    width: 290px;
-                    height: 220px;
-                    padding: 5px;
-                    margin: 20px;
-                    border: 1px solid #eeeeee;}
-                figcaption {
-                    font-size: 90%;
-                    text-align: left;}
-                aside {
-                    width: 230px;
-                    float: left;
-                    padding: 0px 0px 0px 20px;}
-                aside section a {
-                    display: block;
-                    padding: 10px;
-                    border-bottom: 1px solid #eeeeee;}
-                aside section a:hover {
-                    color: #985d6a;
-                    background-color: #efefef;}
-                a {
-                    color: #de6581;
-                    text-decoration: none;}
-                h1, h2, h3 {
-                    font-weight: normal;}
-                h2 {
-                    margin: 10px 0px 5px 0px;
-                    padding: 0px;}
-                h3 {
-                    margin: 0px 0px 10px 0px;
-                    color: #de6581;}
-                aside h2 {
-                    padding: 30px 0px 10px 0px;
-                    color: #de6581;}
-                footer {
-                    font-size: 80%;
-                    padding: 7px 0px 0px 20px;}
-        </style>
-<!--[if lt IE 9]-->
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <!--[endif]-->
-    </head>
-    <body>
-        <div class="wrapper">
-            <header>
-                <h1>SheSureCodes Project Portfolio</h1>
-                <nav>
-                    <ul>
-                        <li><a href="index.html" class="current">Home</a></li>
-                        <li><a href="">Projects</a></li>
-                        <li><a href="">About Me</a></li>
-                        <li><a href="">Contact Me</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <section class="projects">
-                <article>
-                    <figure>
-                        <img src="assets/images/tipcalculator.png" alt="Tip Calculator Project" />
-                        <figcaption>Tip Calculator Project</figcaption>
-                    </figure>
-                    <hgroup>
-                        <h2>100 Days of Code: Python Projects</h2>
-                        <h3>Follow my learning progress</h3>
-                    </hgroup>
-                    <p>A showcase of my journey through the 100 Days of Code: Python challenge using Dr. Angela Yu’s Complete Python Pro Bootcamp. Each project marks a new concept learned — from beginner basics to real-world applications.</p>
-                </article>
-                <article>
-                    <figure>
-                        <img src="assets/images/game.png" alt="Treasure Island Game Screenshot" />
-                        <figcaption>Treasure Island Game</figcaption>
-                    </figure>
-                    <hgroup>
-                        <h2>Interactive Python Game</h2>
-                        <h3>Learning Logic and User Input</h3>
-                    </hgroup>
-                    <p>This Treasure Island mini-game challenged me to combine Python conditionals, variables, if/elif/else statements, and user interaction. I added a playful twist with the story to make it more engaging. I will be updating this periodically.</p>
-                </article>
-            </section>
-            <aside>
-                <section class="100-days-of-code-projects">
-                    <h2>My Projects Completed So Far</h2>
-                    <a href="">Day 1: Band Name Generator</a>
-                    <a href="">Day 2: Tip Calculator</a>
-                    <a href="">Day 3: Treasure Island Interactive Game</a>
-                    <a href="">Day 4: Rock Paper Scissors Game</a>
-                    <a href="">Day 5: Password Generator</a>
-                </section>
-                <section class="contact-details">
-                    <h2>Contact Info:</h2>
-                    <p>Chantell Griffin<br />
-                        <a href="https://www.linkedin.com/in/chantell-griffin/" target="_blank">LinkedIn</a>
-                </section>
-            </aside>
-            <footer>
-                &copy; 2025 SheSureCodes
-            </footer>
-        </div><!--.wrapper-->
-    </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SheSureCodes Project Portfolio</title>
+
+  <!-- Optional modern font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* Base + reset-ish */
+    *, *::before, *::after { box-sizing: border-box; }
+    :root {
+      --ink: #1f2937;          /* dark slate text */
+      --sub: #6b7280;          /* muted text */
+      --brand: #de6581;        /* your accent */
+      --bg: #f9f8f6;           /* page bg */
+      --card: #ffffff;
+      --border: #e5e7eb;
+      --nav: #aeaca8;
+      --radius: 16px;
+      --shadow: 0 10px 20px rgba(0,0,0,.06);
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+      color: var(--ink);
+      background:
+        linear-gradient(rgba(249,248,246,.85), rgba(249,248,246,.85)),
+        url("assets/images/joshua-bartell-6vvIBTvL90A-unsplash.jpg") center/cover no-repeat fixed;
+      line-height: 1.6;
+    }
+
+    .wrapper {
+      max-width: 1100px;
+      margin: 32px auto;
+      padding: 0 20px 28px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: clip;
+    }
+
+    /* Header */
+    header {
+      background: url("assets/images/mockaroon-YqUeLG7fMr4-unsplash.jpg") center/cover no-repeat;
+      padding: 28px 20px 16px;
+      color: #fff;
+      position: relative;
+      isolation: isolate;
+    }
+    header::after {
+      /* subtle darkening to make text/nav readable over image */
+      content: "";
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.25));
+      z-index: -1;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      font-weight: 800;
+      letter-spacing: .3px;
+    }
+
+    /* Nav */
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 22px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 6px 10px;
+      border-radius: 10px;
+      transition: background-color .2s ease, color .2s ease, transform .2s ease;
+    }
+    nav a:hover { 
+      background: rgba(255,255,255,.25);
+      transform: translateY(-1px);
+    }
+    nav a.current { 
+      background: #fff; 
+      color: #111827;
+    }
+
+    /* Projects grid */
+    .projects {
+      padding: 24px 20px 8px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      display: grid;
+      grid-template-rows: auto 1fr;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 28px rgba(0,0,0,.08);
+    }
+
+    figure {
+      margin: 0;
+      display: block;
+      overflow: hidden;
+      aspect-ratio: 16 / 9;
+      background: #fafafa;
+    }
+    figure img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    figcaption {
+      display: none; /* image labels are redundant with headings below */
+    }
+
+    .card-body {
+      padding: 16px 16px 18px;
+    }
+    .card h2 {
+      margin: 0 0 6px;
+      font-size: 1.1rem;
+      font-weight: 800;
+    }
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: .95rem;
+      color: var(--brand);
+      font-weight: 700;
+    }
+    .card p { margin: 0; color: var(--sub); }
+
+    /* Layout: main + sidebar */
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 24px;
+      padding: 0 20px 28px;
+    }
+
+    aside {
+      align-self: start;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+      box-shadow: var(--shadow);
+    }
+    aside h2 {
+      margin: 4px 0 10px;
+      color: var(--brand);
+      font-size: 1.05rem;
+    }
+    .project-links a {
+      display: block;
+      padding: 10px 8px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      text-decoration: none;
+      color: var(--ink);
+      margin-bottom: 8px;
+      transition: background-color .2s ease, transform .2s ease;
+    }
+    .project-links a:hover {
+      background: #f7f7f7;
+      transform: translateX(2px);
+    }
+    .contact a { color: var(--brand); text-decoration: underline; }
+
+    footer {
+      border-top: 1px solid var(--border);
+      color: var(--sub);
+      font-size: .9rem;
+      padding: 16px 20px 20px;
+    }
+
+    /* Responsiveness */
+    @media (max-width: 900px) {
+      .content { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="header-inner">
+        <h1>SheSureCodes Project Portfolio</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Contact Me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="content">
+      <section class="projects">
+        <!-- Card 1 -->
+        <article class="card">
+          <figure>
+            <img src="assets/images/tipcalculator.png" alt="Tip Calculator Project" />
+            <figcaption>Tip Calculator Project</figcaption>
+          </figure>
+          <div class="card-body">
+            <h2>100 Days of Code: Python Projects</h2>
+            <h3>Follow my learning progress</h3>
+            <p>A showcase of my journey through the <em>100 Days of Code: Python</em> challenge using Dr. Angela Yu’s Complete Python Pro Bootcamp. Each project marks a new concept learned — from beginner basics to real-world applications.</p>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <figure>
+            <img src="assets/images/game.png" alt="Treasure Island Game Screenshot" />
+            <figcaption>Treasure Island Game</figcaption>
+          </figure>
+          <div class="card-body">
+            <h2>Interactive Python Game</h2>
+            <h3>Learning Logic and User Input</h3>
+            <p>This Treasure Island mini-game challenged me to combine Python conditionals, variables, if/elif/else statements, and user interaction. I added a playful twist with the story to make it more engaging. I will be updating this periodically.</p>
+          </div>
+        </article>
+      </section>
+
+      <aside>
+        <section class="project-links">
+          <h2>My Projects Completed So Far</h2>
+          <a href="#">Day 1: Band Name Generator</a>
+          <a href="#">Day 2: Tip Calculator</a>
+          <a href="#">Day 3: Treasure Island Interactive Game</a>
+          <a href="#">Day 4: Rock Paper Scissors Game</a>
+          <a href="#">Day 5: Password Generator</a>
+        </section>
+
+        <section class="contact">
+          <h2>Contact Info</h2>
+          <p>Chantell Griffin<br>
+            <a href="https://www.linkedin.com/in/chantell-griffin/" target="_blank" rel="noopener">LinkedIn</a>
+          </p>
+        </section>
+      </aside>
+    </div>
+
+    <footer>&copy; 2025 SheSureCodes</footer>
+  </div>
+</body>
 </html>
