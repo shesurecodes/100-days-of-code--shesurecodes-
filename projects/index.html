@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Index | SheSureCodes</title>
+  <link rel="stylesheet" href="../styles/style.css">
+  <style>
+    body {
+      background: url("../assets/images/joshua-bartell-6vvIBTvL90A-unsplash.jpg") center/cover no-repeat fixed;
+      font-family: Georgia, "Times New Roman", serif;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    main {
+      background: rgba(255, 255, 255, 0.95);
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    }
+
+    header {
+      background: url("../assets/images/mockaroon-YqUeLG7fMr4-unsplash.jpg") center/cover no-repeat;
+      height: 180px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      color: #fff;
+      border-bottom: 3px solid #aeaca8;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    }
+
+    h1 {
+      font-size: 2rem;
+      background: rgba(0,0,0,0.4);
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    li {
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    li:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: #222;
+      font-weight: 600;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    a span {
+      display: block;
+      color: #de6581;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    footer {
+      text-align: center;
+      color: #555;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+
+    .back {
+      display: block;
+      text-align: center;
+      color: #de6581;
+      font-weight: 700;
+      margin: 1rem auto 2rem;
+      text-decoration: none;
+    }
+
+    .back:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>100 Days of Code: Project Index</h1>
+  </header>
+
+  <a href="../index.html" class="back">&larr; Back to Portfolio</a>
+
+  <main>
+    <ul>
+      <li><a href="day-001/index.html"><span>Day 001</span>Band Name Generator</a></li>
+      <li><a href="day-002/index.html"><span>Day 002</span>Tip Calculator</a></li>
+      <li><a href="#"><span>Day 003</span>Treasure Island Game</a></li>
+      <li><a href="#"><span>Day 004</span>Rock Paper Scissors</a></li>
+      <li><a href="#"><span>Day 005</span>Password Generator</a></li>
+      <!-- Add more as you complete new days -->
+    </ul>
+  </main>
+
+  <footer>
+    &copy; 2025 SheSureCodes — 100 Days of Code Project Index
+  </footer>
+</body>
+</html>
