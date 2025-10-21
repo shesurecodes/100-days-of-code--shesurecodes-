@@ -21,7 +21,7 @@ body {
 
 /* ----- Wrapper ----- */
 .wrapper {
-  width: 940px;
+  width: 1100px;
   max-width: 95%;
   margin: 20px auto;
   border: 2px solid #000;
@@ -239,12 +239,22 @@ body.daypage {
 }
 
 /* Remove main portfolio header height and background */
+/* Header for Day Pages (stone background like homepage) */
 body.daypage header {
-  background: transparent;
-  height: auto;
-  padding-top: 12px;
-  text-align: center;
+  background: url("../assets/images/mockaroon-YqUeLG7fMr4-unsplash.jpg") center/cover no-repeat;
+  height: 180px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #aeaca8;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
+
 
 /* Shared content width */
 body.daypage .container {
