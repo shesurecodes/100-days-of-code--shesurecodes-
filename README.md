@@ -19,13 +19,13 @@ Through this bootcamp, I’ll gain hands-on experience with Python programming �
 
 This repository is structured by day, with each folder containing its own code, notes, and mini-project.
 
-100-days-of-code/ /br
-│ /br
-├── Day 01 — Beginner Concepts /br
-├── Day 02 — Data Types & Variables /br
-├── Day 03 — Control Flow /br
-├── ... /br
-└── Day 100 — Final Capstone Project /br
+100-days-of-code
+│ 
+├── Day 01 — Beginner Concepts 
+├── Day 02 — Data Types & Variables 
+├── Day 03 — Control Flow 
+├── ... 
+└── Day 100 — Final Capstone Project 
 
 Each directory includes:
 - 🗒️ **Notes:** What I learned that day  
@@ -98,12 +98,12 @@ If you’re also on the 100 Days of Code journey, let’s connect and learn toge
 
 ## 📅 Progress Log
 
-| Day | Project / Topic | Highlights | /br
-|-----|------------------|-------------| /br
-| 01  | Beginner Concepts | Printing, debugging, strings | /br
-| 02  | Data Types & Variables | Type casting, f-strings | /br
-| 03  | Control Flow | Conditional statements, logical operators | /br
-| ... | ... | ... | /br
+| Day | Project / Topic | Highlights | 
+|-----|------------------|-------------| 
+| 01  | Beginner Concepts | Printing, debugging, strings | 
+| 02  | Data Types & Variables | Type casting, f-strings | 
+| 03  | Control Flow | Conditional statements, logical operators | 
+| ... | ... | ... | 
 
 *(I’ll update this table as I go!)*
 
