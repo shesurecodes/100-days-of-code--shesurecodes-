@@ -227,3 +227,141 @@ footer {
     padding: 8px;
   }
 }
+/* ===========================================================
+   Day Project Pages Layout (light boxes over wood background)
+   =========================================================== */
+
+body.daypage {
+  background: url("../assets/images/joshua-bartell-6vvIBTvL90A-unsplash.jpg") center/cover no-repeat fixed;
+  color: #222;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+}
+
+/* Remove main portfolio header height and background */
+body.daypage header {
+  background: transparent;
+  height: auto;
+  padding-top: 12px;
+  text-align: center;
+}
+
+/* Shared content width */
+body.daypage .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Navigation bar */
+body.daypage nav {
+  background: #aeaca8;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin: 12px auto;
+}
+body.daypage nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  padding: 10px;
+  margin: 0;
+}
+body.daypage nav a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+body.daypage nav a:hover,
+body.daypage nav a.current {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Back to Portfolio link */
+body.daypage .back {
+  display: block;
+  text-align: center;
+  color: #de6581;
+  font-weight: 700;
+  margin: 10px auto 0;
+  text-decoration: none;
+}
+body.daypage .back:hover {
+  text-decoration: underline;
+}
+
+/* Main content box */
+body.daypage main {
+  background: rgba(255, 255, 255, 0.95);
+  color: #222;
+  max-width: 1100px;
+  margin: 20px auto 40px;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Each section card */
+body.daypage section {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* Headings and text */
+body.daypage h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #222;
+}
+body.daypage h2 {
+  font-size: 1.4rem;
+  color: #444;
+  margin-top: 0;
+}
+body.daypage h3 {
+  color: #de6581;
+  font-weight: bold;
+  margin-top: 0;
+}
+body.daypage pre {
+  background: #f4f4f4;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+/* Footer box */
+body.daypage footer {
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  padding: 1rem;
+  color: #333;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  max-width: 1100px;
+  margin: 0 auto 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  body.daypage nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  body.daypage main {
+    padding: 1.2rem;
+  }
+  body.daypage section {
+    padding: 1rem;
+  }
+}
