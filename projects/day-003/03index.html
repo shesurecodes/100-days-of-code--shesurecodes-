@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Day 003 – Treasure Island Interactive Game | SheSureCodes</title>
+  <link rel="stylesheet" href="../../styles/style.css" />
+</head>
+
+<body class="daypage">
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a class="current" href="../day-003/03index.html">Day 03</a></li>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../index.html">Projects</a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Contact Me</a></li>
+        </ul>
+      </nav>
+      <a href="../../index.html" class="back">&larr; Back to Portfolio</a>
+    </div>
+  </header>
+
+  <main>
+    <h1>Day 003 – Treasure Island Interactive Game</h1>
+    <h2>Day 03: Treasure Island Interactive Game</h2>
+
+    <section>
+      <h3>🧠 Project Overview</h3>
+      <p>For Day 3 of my 100 Days of Code challenge, I built a fun choose-your-own-adventure game in Python called Treasure Island. The program guides the user through a series of text-based decisions to find hidden treasure—or meet an unlucky end! This project was a great way to practice conditional logic and branching paths in programming.</p>
+    </section>
+
+    <section>
+      <h3>📜 Goal</h3>
+      <p>The goal of this project was to practice using if/elif/else statements to create an interactive story where the player’s choices determine the outcome. I wanted to learn how nested conditions and user input can build dynamic, game-like experiences using only text.</p>
+    </section>
+
+    <section>
+      <h3>💻 Code Example</h3>
+      <pre><code># Treasure Island Interactive Game
+import txt
+
+print(r'''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\ ` . "-._ /_______________|_______
+|                   | |o ;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.")
+print("You have arrived on a deserted island. After walking for some time,\n"
+      "you have come to a fork in the road. There's nothing in either direction.\n"
+      "Where do you want to go?")
+first_move = input("""type "left" or "right" """).strip().lower()
+if first_move == "left":
+    print("After walking a short distance, you have stumbled upon a canal\n"
+          "rushing with a quick current, there's only two choices.\n"
+          "Do you try to swim across or wait?")
+    sec_move = input("""type "swim" or "wait" """).strip().lower()
+    if sec_move == "wait":
+        print("You successfully waited while the fast-moving current slowed down.\n"
+              "After a short wait, you successfully swam across.\n"
+              "After a short distance, you stumble across an ancient temple with multiple colored doors.\n"
+              "There is a blue, yellow, or red door. You can also see stairs going to a cellar.\n"
+              "Which way do you go?")
+        third_move = input(""" type "blue", "yellow", "red", or "stairs" """).strip().lower()
+
+        if third_move == "yellow":
+            print("You Win!")
+        elif third_move == "blue":
+            print("Burned by fire.\nGame Over.")
+        elif third_move == "red":
+            print("Eaten by beasts.\nGame Over.")
+        elif third_move == "stairs":
+            print("You descend into darkness and get eaten by a starving cellar troll.\nGame Over.")
+        else:
+            print("Invalid choice.\nGame Over.")
+    elif sec_move == "swim":
+        print("You were attacked by alligators.\nGame Over.")
+    else:
+        print("Invalid choice.\nGame Over.")
+
+elif first_move == "right":
+    print("You fell into a hole.\nGame Over.")
+else:
+    print("Invalid choice.\nGame Over.")
+</code></pre>
+<iframe src="https://trinket.io/embed/python3/911d1cc87843"   width="100%"
+  height="500"
+  frameborder="0"
+  marginwidth="0"
+  marginheight="0"
+  allowfullscreen
+  loading="lazy"
+  style="scroll-margin-top:0; overflow:hidden;"
+  onload="this.blur(); window.scrollTo(0,0);"></iframe>
+    </section>
+
+    <section>
+      <h3>📈 What I Learned</h3>
+      <ul>
+        <li>How to use if/elif/else blocks to control program flow.</code>.</li>
+        <li>How to handle string input and make decisions based on user responses.</li>
+        <li>The importance of logical ordering and indentation for readable, working code.</li>
+        <li>How to structure a program so that each decision point leads naturally to the next outcome.</li>
+      </ul>
+      <h2>Key Takeaways</h2>
+      <p>This project helped me understand how logic and flow control shape a player’s experience in text-based games. Even with simple if statements, I could create multiple story paths and outcomes. It was exciting to see how quickly a few lines of Python could turn into an interactive adventure!</p>
+    </section>
+
+    <section>
+      <h3>🔗 Resources</h3>
+      <ul>
+        <li><a href="https://www.udemy.com/course/100-days-of-code/" target="_blank">100 Days of Code: Python Bootcamp</a></li>
+        <li><a href="https://github.com/shesurecodes" target="_blank">View on GitHub</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 SheSureCodes | Day 003
+  </footer>
+</body>
+</html>
