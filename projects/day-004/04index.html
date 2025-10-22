@@ -40,16 +40,73 @@
     <section>
       <h3>💻 Code Example</h3>
       <pre><code># Rock Paper Scissors
-print("Welcome to the tip calculator!")
-bill = float(input("What was the total bill? $"))
-tip = int(input("What percentage tip would you like to give? 10 12 15 "))
-people = int(input("How many people to split the bill? "))
-tip_conv = tip / 100 + 1
-tip_total = (bill / people) * tip_conv
-round(tip_total, 2)
-print(f"Each person should pay: ${tip_total}")
+import random
+from random import randint
+
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+rock_paper_scissor = int(input("What do you choose? Type 0 for Rock, 1 for Paper and 2 for Scissors."))
+if rock_paper_scissor == 0:
+    print(rock)
+if rock_paper_scissor == 1:
+    print(paper)
+if rock_paper_scissor == 2:
+    print(scissors)
+print("Computer chose:")
+random_rock_paper_scissors = random.randint(0, 2)
+if rock_paper_scissor == 0 and random_rock_paper_scissors == 0:
+    print(rock)
+    print("It\'s a draw.")
+if rock_paper_scissor == 0 and random_rock_paper_scissors == 1:
+    print(paper)
+    print("You lose.")
+if rock_paper_scissor == 0 and random_rock_paper_scissors == 2:
+    print(scissors)
+    print("You win!")
+if rock_paper_scissor == 1 and random_rock_paper_scissors == 1:
+    print(paper)
+    print("It\'s a draw.")
+if rock_paper_scissor == 1 and random_rock_paper_scissors == 0:
+    print(rock)
+    print("You win!")
+if rock_paper_scissor == 1 and random_rock_paper_scissors == 2:
+    print(scissors)
+    print("You lose!")
+if rock_paper_scissor == 2 and random_rock_paper_scissors == 2:
+    print(scissors)
+    print("It\'s a draw.")
+if rock_paper_scissor == 2 and random_rock_paper_scissors == 0:
+    print(rock)
+    print("You lose!")
+if rock_paper_scissor == 2 and random_rock_paper_scissors == 1:
+    print(paper)
+    print("You lose!")
 </code></pre>
-<iframe src="https://trinket.io/embed/python3/392c702930b2"   width="100%"
+<iframe src="https://trinket.io/embed/python3/beffc1bae646"   width="100%"
   height="500"
   frameborder="0"
   marginwidth="0"
