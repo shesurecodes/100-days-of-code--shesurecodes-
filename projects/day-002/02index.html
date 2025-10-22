@@ -29,35 +29,39 @@
 
     <section>
       <h3>🧠 Project Overview</h3>
-      <p>This was my second Python project — a fun and simple program that generates a unique band name based on user inputs. The program takes the input from the user's city that they grew up in and the name of their pet. It then generates a band name based on these two inputs. It’s part of Dr. Angela Yu’s 100 Days of Code: The Complete Python Pro Bootcamp.</p>
+      <p>For Day 2 of my 100 Days of Code challenge, I built a Tip Calculator in Python. This simple yet practical project calculates how much each person should pay when splitting a bill, including the tip percentage. It’s one of those little programs that seem basic at first, but it really helps reinforce how user input, math operations, and formatting work together.</p>
     </section>
 
     <section>
       <h3>📜 Goal</h3>
-      <p>Learn how to work with <strong>variables</strong> and <strong>input()</strong> in Python to gather user data and combine it dynamically into a fun output.</p>
+      <p>The goal of this project was to create a Python program that calculates how much each person should pay on a shared bill, including a chosen tip percentage.</p>
     </section>
 
     <section>
       <h3>💻 Code Example</h3>
       <pre><code># Tip Calculator
-print("Welcome to the band name generator.")
-city = input("What's the name of the city you grew up in?\n")
-print(city)
-pet = input("What's your pet's name?\n")
-print("Your band name could be " + city + " " + pet)
-# the \n function breaks the cursor on a new line, giving a cleaner appearance
+print("Welcome to the tip calculator!")
+bill = float(input("What was the total bill? $"))
+tip = int(input("What percentage tip would you like to give? 10 12 15 "))
+people = int(input("How many people to split the bill? "))
+tip_conv = tip / 100 + 1
+tip_total = (bill / people) * tip_conv
+round(tip_total, 2)
+print(f"Each person should pay: ${tip_total}")
 </code></pre>
-<iframe src="https://trinket.io/embed/python3/f082bac568bc" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.io/embed/python3/392c702930b2" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
     </section>
 
     <section>
       <h3>📈 What I Learned</h3>
       <ul>
-        <li>Using <code>input()</code> to gather user input</li>
-        <li>Basic string concatenation in Python</li>
-        <li>Printing output dynamically</li>
-        <li>Creating an interactive beginner project</li>
+        <li>How to use <code>input()</code> to capture user data and convert it from strings to numbers with <code>float()</code> and <code>int()</code>.</li>
+        <li>How to perform basic arithmetic operations in Python to calculate total bills and individual shares.</li>
+        <li>How to use <code>round()</code> to control the number of decimal places for cleaner, user-friendly output.</li>
+        <li>How to use f-strings for clean, readable print statements — especially when displaying calculations.</li>
       </ul>
+      <h2>Key Takeaways</h2>
+      <p>This project helped me understand how small details like rounding and type conversion make a big difference in user experience. It also reminded me how much power Python has in just a few lines — from taking input to formatting output beautifully.</p>
     </section>
 
     <section>
@@ -70,7 +74,7 @@ print("Your band name could be " + city + " " + pet)
   </main>
 
   <footer>
-    &copy; 2025 SheSureCodes | Day 001
+    &copy; 2025 SheSureCodes | Day 002
   </footer>
 </body>
 </html>
