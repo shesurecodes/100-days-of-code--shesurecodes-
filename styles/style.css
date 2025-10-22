@@ -232,7 +232,7 @@ footer {
    =========================================================== */
 
 body.daypage {
-  background: url("../assets/images/joshua-bartell-6vvIBTvL90A-unsplash.jpg") center/cover no-repeat fixed;
+  background: url("../assets/images/joshua-bartell-6vvIBTvL90A-unsplash.jpg") center/cover no-repeat;
   color: #222;
   font-family: Georgia, "Times New Roman", serif;
   line-height: 1.6;
