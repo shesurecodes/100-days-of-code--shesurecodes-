@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Day 005 – Random Password Generator | SheSureCodes</title>
+  <link rel="stylesheet" href="../../styles/style.css" />
+</head>
+
+<body class="daypage">
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a class="current" href="../day-005/05index.html">Day 05</a></li>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../index.html">Projects</a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Contact Me</a></li>
+        </ul>
+      </nav>
+      <a href="../../index.html" class="back">&larr; Back to Portfolio</a>
+    </div>
+  </header>
+
+  <main>
+    <h1>Day 005 – Random Password Generator</h1>
+    <h2>Day 05: Random Password Generator</h2>
+
+    <section>
+      <h3>🧠 Project Overview</h3>
+      <p>Today’s challenge was to build a Random Password Generator in Python. The goal was to automatically create strong, unpredictable passwords by combining letters, numbers, and special symbols in random order. This project was a great way to practice working with Python’s random module and list manipulation.</p>
+    </section>
+
+    <section>
+      <h3>📜 Goal</h3>
+      <p>To create a program that automatically generates strong, random passwords combining letters, numbers, and symbols — helping users protect their accounts with secure, unpredictable credentials.</p>
+    </section>
+
+    <section>
+      <h3>💻 Code Example</h3>
+      <pre><code>import random
+from random import shuffle
+
+# list of possible characters
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
+
+# get user inputs
+print("Welcome to the PyPassword Generator!")
+nr_letters = int(input("How many letters would you like in your password?\n"))
+nr_symbols = int(input(f"How many symbols would you like?\n"))
+nr_numbers = int(input(f"How many numbers would you like?\n"))
+
+# create a password list
+password_list = []
+
+# add to list with append while getting the range
+for _ in range(nr_letters):
+    password_list.append(random.choice(letters))
+for _ in range(nr_symbols):
+    password_list.append(random.choice(symbols))
+for _ in range(nr_numbers):
+    password_list.append(random.choice(numbers))
+
+# add random.shuffle to shuffle password list before printing
+random.shuffle(password_list)
+
+# combine into a single string
+password = "".join(password_list)
+
+# print the single string
+print(f"Your password is: {password}")
+</code></pre>
+<iframe src="https://trinket.io/embed/python3/e5ba3e6bfdc8"   width="100%"
+  height="500"
+  frameborder="0"
+  marginwidth="0"
+  marginheight="0"
+  allowfullscreen
+  loading="lazy"
+  style="scroll-margin-top:0; overflow:hidden;"
+  onload="this.blur(); window.scrollTo(0,0);"></iframe>
+    </section>
+
+    <section>
+      <h3>📈 What I Learned</h3>
+      <ul>
+        <li>Use the random.choice() and random.shuffle() functions.</li>
+        <li>Combine multiple lists into one and randomize the order of items.</li>
+        <li>Manage user input and dynamically generate different outputs each run.</li>
+      </ul>
+      <h2>Key Takeaways</h2>
+      <p>ChatGPT said:
+
+I learned how to use Python’s random module to generate unpredictable results, combine letters, numbers, and symbols into a single password, and handle user input effectively. This project helped me understand how randomization can enhance both security and functionality in real-world applications.</p>
+    </section>
+
+    <section>
+      <h3>🔗 Resources</h3>
+      <ul>
+        <li><a href="https://www.udemy.com/course/100-days-of-code/" target="_blank">100 Days of Code: Python Bootcamp</a></li>
+        <li><a href="https://github.com/shesurecodes" target="_blank">View on GitHub</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 SheSureCodes | Day 005
+  </footer>
+</body>
+</html>
